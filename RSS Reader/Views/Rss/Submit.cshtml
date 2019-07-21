@@ -1,0 +1,26 @@
+﻿
+@model IEnumerable<RSS_Reader.Models.RssItem>
+
+@{
+    ViewBag.Title = "RSS Feed";
+}
+
+<h1>
+    List of RSS Feed items
+</h1>
+
+
+@foreach (var item in Model)
+{
+    <div>
+        <p>@item.Title</p>
+
+        <a href="@item.Url">@item.Url</a>
+
+        <hr />
+    </div>
+}
+
+
+
+

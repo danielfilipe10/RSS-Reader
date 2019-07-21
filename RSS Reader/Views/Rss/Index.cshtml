@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Rss Reader";
+}
+
+<h2>RSS Reader</h2>
+
+
+<div>
+
+    @using (Html.BeginForm("/Submit","Rss"))
+    {
+        <input type="text" name="url" />
+        <input type="submit" />
+    }
+</div>
+
+
